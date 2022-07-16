@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по совпадению скилов</title>
+</head>
+<body>
+
+<h1>найдено кандидатов {{count_candidates}}</h1>
+
+{% for candidate in candidates %}
+<p><a href="/candidate/{{candidate.pk}}">{{candidate.name}}</a></p>
+{% endfor %}
+
+</body>
+</html>
